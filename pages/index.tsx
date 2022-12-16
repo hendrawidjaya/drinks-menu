@@ -17,24 +17,17 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
+            Get started by going&nbsp;
+            <a href='https://www.google.com/maps/place/Kluckstra%C3%9Fe+25,+10785+Berlin/@52.5030137,13.3529007,15z/data=!3m1!4b1!4m5!3m4!1s0x47a8504b16f63165:0x643a719ad31a3b1b!8m2!3d52.503014!4d13.361634' className={styles.code}>HERE!</a>
           </p>
           <div>
             <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              href="https://github.com/hendrawidjaya"
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
+              Developed by{' '}
+              <h2 className={styles.vercelLogo}>H. W. D.</h2>
             </a>
           </div>
         </div>
@@ -48,76 +41,65 @@ export default function Home() {
             height={37}
             priority
           /> */}
-          <h1>Christmas Dinner</h1>
-
-          {/* <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div> */}
+          <h1>Wild Christmas Dinner</h1>
           <div className={styles.thirteen}>
             16.12
           </div>
         </div>
         <div className={styles.grid}>
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://odyssey.wildcodeschool.com/crew"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
+            <h2 className={styles.className}>
+              RSVP <span>&gt;</span>
             </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
+            <p className={styles.className}>
+              Find out who might be attending.
             </p>
           </a>
 
           <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://en.wikipedia.org/wiki/Secret_Santa"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
+            <h2 className={styles.className}>
+              Secret Santa <span>&gt;</span>
             </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
+            <p className={styles.className}>
+              Exchange your present with the others and feel the festivities!
             </p>
           </a>
 
           <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="http://localhost:3000/drinks"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
+            <h2 className={styles.className}>
+              Drinks <span>&gt;</span>
             </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
+            <p className={styles.className}>
+              Discover your poison and be wild!
             </p>
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.uber.com/global/de/cities/berlin/"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
+            <h2 className={styles.className}>
+              Going Home <span>&gt;</span>
             </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
+            <p className={styles.className}>
+              How to go home safely after a wild night.
             </p>
           </a>
         </div>
