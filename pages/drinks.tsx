@@ -2,47 +2,60 @@ import Link from 'next/link'
 import Modal from "../components/Modal";
 import styles from '../styles/Drinks.module.css';
 
+const data = [
+    {
+        title: "Soft Drinks",
+        items: ["Coca-CoLars", "Club Matt-e", "Fanta", "Sprite"]
+    },
+    {
+        title: "Juice",
+        items: ["Mariannecuja", "Oriange", "Pineavin"]
+    },
+    {
+        title: "Beer",
+        items: ["Pavelaner"]
+    },
+    {
+        title: "Shots",
+        items: ["Absolute Vlada 0.4cl"]
+    },
+    {
+        title: "Cocktails",
+        items: ["Moscow Muly", "Ahmed on the Beach"]
+    },
+    {
+        title: "Longdrinks",
+        items: ["Georg & Tonic", "Felipe Libre"]
+    },
+    {
+        title: "Mocktails",
+        items: ["Sir Hendra"]
+    },
+    {
+        title: "Warm Drinks",
+        items: ["Omaricano", "Robertea"]
+    },
+    {
+        title: "Others",
+        items: ["SparkLera Water"]
+    },]
+
+const ItemComponent = ({ items }: any) => {
+    return (<div>
+        {items.map((element: any, index: any) => <h4 key={index}> {element} </h4>)}
+    </div>)
+}
+
 export default function drinks() {
 
     return (
         <>
             <div className={styles.container}>
-                <Modal
-                    title={"Soft Drinks"}
-                    drink={"Coca-Colars 0.4l"}
-                />
-                <Modal
-                    title={"Juice"}
-                    drink={"Mariannecuja 0.3l"}
-                />
-                <Modal
-                    title={"Beer"}
-                    drink={"Pavelaner 0.75l"}
-                />
-                <Modal
-                    title={"Cocktails"}
-                    drink={"Moscow Muly"}
-                />
-                <Modal
-                    title={"Longdrinks"}
-                    drink={"Georg & Tonic"}
-                />
-                <Modal
-                    title={"Mocktails"}
-                    drink={"The Hendra"}
-                />
-                <Modal
-                    title={"Shots"}
-                    drink={"Absolute Vlada 0.4cl"}
-                />
-                <Modal
-                    title={"Warm Drinks"}
-                    drink={"Omaricano"}
-                />
-                <Modal
-                    title={"Others"}
-                    drink={"Sparklera Water 0.3l"}
-                />
+                {data.map((element, index) =>
+                    <Modal key={index} title={element.title}>
+                        {element.items.map((item, itemIndex) => <h4 key={itemIndex}>{item}</h4>)}
+                    </Modal>
+                )}
                 <Link
                     href="/"
                     style={{
