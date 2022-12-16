@@ -1,3 +1,4 @@
+import Modal from "../components/Modal";
 import styles from '../styles/Drinks.module.css';
 
 export default function drinks() {
@@ -5,27 +6,50 @@ export default function drinks() {
     return (
         <>
             <div className={styles.container}>
-                <div className={styles.drink_name}>
-                    Soft Drinks
-                </div>
-                <div className={styles.drink_name}>
-                    Juice
-                </div>
-                <div className={styles.drink_name}>
-                    Pure
-                </div>
-                <div className={styles.drink_name}>
-                    Cocktails
-                </div>
-                <div className={styles.drink_name}>
-                    Mocktails
-                </div>
-                <div className={styles.drink_name}>
-                    Warm Drinks
-                </div>
-                <div className={styles.drink_name}>
-                    Others
-                </div>
+                <Modal
+                    title={"Soft Drinks"}
+                    drink={"Coca-Cola 0.4l"}
+                />
+                <Modal
+                    title={"Juice"}
+                    drink={"Pineapple 0.3l"}
+                />
+                <Modal
+                    title={"Beer"}
+                    drink={"Berliner Kinder 0.75l"}
+                />
+                <Modal
+                    title={"Cocktails"}
+                    drink={"Moscow Muly"}
+                />
+                <Modal
+                    title={"Longdrinks"}
+                    drink={"Georg & Tonic"}
+                />
+                <Modal
+                    title={"Mocktails"}
+                    drink={"Malibu Barbie"}
+                />
+                <Modal
+                    title={"Shots"}
+                    drink={"Jaegermeister 0.4cl"}
+                />
+                <Modal
+                    title={"Warm Drinks"}
+                    drink={"Jasmin Tea"}
+                />
+                <Modal
+                    title={"Others"}
+                    drink={"Sparkling Water 0.3l"}
+                />
+                <a
+                    href="http://localhost:3000/"
+                    style={{
+                        color: "red",
+                        fontSize: 20,
+                        marginBottom: 50
+                    }}
+                > Back to Main Page</a>
             </div>
         </>
     );

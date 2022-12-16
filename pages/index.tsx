@@ -27,20 +27,12 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               Developed by{' '}
-              <h2 className={styles.vercelLogo}>H. W. D.</h2>
+              <h2 className={styles.developer}>Hendra W. D.</h2>
             </a>
           </div>
         </div>
 
         <div className={styles.center}>
-          {/* <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          /> */}
           <h1>Wild Christmas Dinner</h1>
           <div className={styles.thirteen}>
             16.12
