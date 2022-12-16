@@ -1,7 +1,7 @@
 import styles from "./Modal.module.css";
 import React, { useState } from "react";
 
-function Modal({ title, drink }) {
+function Modal({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
 
   if (!isOpen)
@@ -12,9 +12,7 @@ function Modal({ title, drink }) {
     );
   return (
     <div className={styles.overlay} onClick={() => setIsOpen(false)}>
-      <div className={styles.modal}>
-        <h3>{drink}</h3>
-      </div>
+      <div className={styles.modal}>{children}</div>
     </div>
   );
 }
