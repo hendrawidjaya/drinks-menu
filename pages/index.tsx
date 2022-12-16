@@ -26,8 +26,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Developed by{' '}
-              <h2 className={styles.developer}>Hendra W. D.</h2>
+              Developed by Hendra W. D.
             </a>
           </div>
         </div>
