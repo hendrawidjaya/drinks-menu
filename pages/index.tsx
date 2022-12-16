@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
@@ -26,8 +27,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Developed by{' '}
-              <h2 className={styles.developer}>Hendra W. D.</h2>
+              Developed by Hendra W. D.
             </a>
           </div>
         </div>
@@ -67,8 +67,8 @@ export default function Home() {
             </p>
           </a>
 
-          <a
-            href="http://localhost:3000/drinks"
+          <Link
+            href="/drinks"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
@@ -79,7 +79,7 @@ export default function Home() {
             <p className={styles.className}>
               Discover your poison and be wild!
             </p>
-          </a>
+          </Link>
 
           <a
             href="https://www.uber.com/global/de/cities/berlin/"
