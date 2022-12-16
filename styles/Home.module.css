@@ -5,6 +5,7 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background-color: rgb(16, 48, 16, 0.7);
 }
 
 .description {
@@ -35,6 +36,7 @@
 }
 
 .code {
+  font-size: 1.5rem;
   font-weight: 700;
   font-family: var(--font-mono);
 }
@@ -78,6 +80,8 @@
   align-items: center;
   position: relative;
   padding: 4rem 0;
+  color: rgb(89, 11, 11);
+  z-index: 1;
 }
 
 .center::before {
@@ -85,7 +89,7 @@
   border-radius: 50%;
   width: 480px;
   height: 360px;
-  margin-left: -400px;
+  margin-left: -580px;
 }
 
 .center::after {
@@ -97,7 +101,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -125,7 +129,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
@@ -258,7 +262,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .vercelLogo {
+  .developer {
     filter: invert(1);
   }
 
@@ -275,4 +279,8 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.className {
+  color: rgb(240, 213, 145);
 }
