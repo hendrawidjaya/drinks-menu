@@ -17,11 +17,11 @@ const data = [
     },
     {
         title: "Shots",
-        items: ["Absolute Vlada 0.4cl"]
+        items: ["Stefquilan 0.4cl"]
     },
     {
         title: "Cocktails",
-        items: ["Moscow Muly", "Ahmed on the Beach"]
+        items: ["Moscow Muly", "Piña CoVlada", "Ahmed on the Beach", "CosmopoLera", "NeVroni", "The Right Hend"]
     },
     {
         title: "Longdrinks",
@@ -29,15 +29,15 @@ const data = [
     },
     {
         title: "Mocktails",
-        items: ["Sir Hendra"]
+        items: ["Loodmela Bullofshit"]
     },
     {
         title: "Warm Drinks",
-        items: ["Omaricano", "Robertea"]
+        items: ["Omaricano", "Robertea", "Honey And-rei Lemon"]
     },
     {
         title: "Others",
-        items: ["SparkLera Water"]
+        items: ["Water"]
     },]
 
 const ItemComponent = ({ items }: any) => {
