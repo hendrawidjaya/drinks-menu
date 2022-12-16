@@ -80,7 +80,7 @@
   align-items: center;
   position: relative;
   padding: 4rem 0;
-  color: rgb(89, 11, 11);
+  color: rgb(197, 14, 14);
   z-index: 1;
 }
 
@@ -117,7 +117,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75px;
+  width: 95px;
   height: 75px;
   padding: 25px 10px;
   margin-left: 16px;

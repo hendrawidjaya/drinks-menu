@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Modal from "../components/Modal";
 import styles from '../styles/Drinks.module.css';
 
@@ -42,14 +43,14 @@ export default function drinks() {
                     title={"Others"}
                     drink={"Sparkling Water 0.3l"}
                 />
-                <a
-                    href="http://localhost:3000/"
+                <Link
+                    href="/"
                     style={{
                         color: "red",
                         fontSize: 20,
                         marginBottom: 50
                     }}
-                > Back to Main Page</a>
+                > Back to Main Page</Link>
             </div>
         </>
     );
