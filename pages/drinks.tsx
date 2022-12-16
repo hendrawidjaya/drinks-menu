@@ -9,15 +9,15 @@ export default function drinks() {
             <div className={styles.container}>
                 <Modal
                     title={"Soft Drinks"}
-                    drink={"Coca-Cola 0.4l"}
+                    drink={"Coca-Colars 0.4l"}
                 />
                 <Modal
                     title={"Juice"}
-                    drink={"Pineapple 0.3l"}
+                    drink={"Mariannecuja 0.3l"}
                 />
                 <Modal
                     title={"Beer"}
-                    drink={"Berliner Kinder 0.75l"}
+                    drink={"Pavelaner 0.75l"}
                 />
                 <Modal
                     title={"Cocktails"}
@@ -29,19 +29,19 @@ export default function drinks() {
                 />
                 <Modal
                     title={"Mocktails"}
-                    drink={"Malibu Barbie"}
+                    drink={"The Hendra"}
                 />
                 <Modal
                     title={"Shots"}
-                    drink={"Jaegermeister 0.4cl"}
+                    drink={"Absolute Vlada 0.4cl"}
                 />
                 <Modal
                     title={"Warm Drinks"}
-                    drink={"Jasmin Tea"}
+                    drink={"Omaricano"}
                 />
                 <Modal
                     title={"Others"}
-                    drink={"Sparkling Water 0.3l"}
+                    drink={"Sparklera Water 0.3l"}
                 />
                 <Link
                     href="/"
